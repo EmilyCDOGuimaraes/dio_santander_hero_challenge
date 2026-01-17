@@ -18,14 +18,20 @@ function getHeroLevel(xp) {
 
 function classifyHero(name, xp) {
     const heroLevel = getHeroLevel(xp);
-    return `O Herói de nome ${name}, está no nível de ${heroLevel}.`;
+
+    if (heroLevel === "XP inválido") {
+        return `O Herói de nome ${name} não possui XP suficiente para ser classificado.`
+    }
+
+    return `O Herói de nome ${name} está no nível de ${heroLevel}.`;
 }
 
 // --- Array of heroes (loop requirement)
 const heroes = [
     { name: "Emily", xp: 7500 },
     { name: "Mathis", xp: 1200 },
-    { name: "Mabel", xp: 9999 }
+    { name: "Mabel", xp: 9999 }, 
+    { name: "Unknown Hero", xp: -100 } // personal touch
 ];
 
 // --- Loop 

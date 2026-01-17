@@ -1,71 +1,77 @@
-# >> Hero Level Classifier | Classificador de Nível de Herói
+# 🛡️ Hero Level Classifier | Classificador de Nível de Herói
 
-A beginner-friendly JavaScript project created as part of a **Santander / DIO programming logic challenge**.  
-This project was written from scratch to practice logical reasoning, code structure, and basic JavaScript concepts.
+A beginner-friendly JavaScript project built for a **Santander / DIO programming logic challenge**.  
+A small script that classifies heroes by **XP (experience points)** using conditionals, loops, and functions.
 
-Este é um projeto em JavaScript desenvolvido como parte de um **desafio de lógica de programação da Santander / DIO**.  
-O código foi escrito do zero com foco em entendimento lógico e organização, não apenas em cumprir o desafio.
+Um projeto em JavaScript feito para um **desafio de lógica de programação da Santander / DIO**.  
+Um script simples que classifica heróis por **XP (pontos de experiência)** usando condicionais, laços e funções.
 
 ---
 
 ## Overview | Visão Geral
 
-Each hero has a name and a quantity of experience points (XP).  
-Based on the XP value, the hero is classified into a specific level.
+The program stores heroes (name + XP), classifies each one into a level, and prints a short report in the terminal.  
+O programa armazena heróis (nome + XP), classifica cada um em um nível e imprime um relatório no terminal.
 
-Cada herói possui um nome e uma quantidade de pontos de experiência (XP).  
-Com base no XP, o herói é classificado em um nível específico.
+### XP → Level rules | Regras de XP → Nível
 
-XP ranges used in the classification / Faixas de XP utilizadas:
-
-- ≤ 1000 → Ferro  
-- ≤ 2000 → Bronze  
-- ≤ 5000 → Prata  
-- ≤ 7000 → Ouro  
-- ≤ 8000 → Platina  
-- ≤ 9000 → Ascendente  
-- ≤ 10000 → Imortal  
-- > 10000 → Radiante  
+- **XP ≤ 1000** → Ferro  
+- **1001–2000** → Bronze  
+- **2001–5000** → Prata  
+- **5001–7000** → Ouro  
+- **7001–8000** → Platina  
+- **8001–9000** → Ascendente  
+- **9001–10000** → Imortal  
+- **XP ≥ 10001** → Radiante  
 
 ---
 
-## What This Project Demonstrates | O Que Este Projeto Demonstra
+## What this demonstrates | O que este projeto demonstra
 
-- Variables and constants / Variáveis e constantes  
-- Conditional structures (`if`) / Estruturas condicionais  
-- Looping with `for` / Laços de repetição  
-- Functions with single responsibility / Funções com responsabilidade única  
-- Basic array manipulation / Manipulação básica de arrays  
-- Separation between logic and output / Separação entre lógica e saída  
+- Variables & constants / Variáveis e constantes  
+- Decision structures (`if`) / Estruturas condicionais (`if`)  
+- Loops (`for`) / Laços de repetição (`for`)  
+- Functions / Funções  
+- Arrays + `.push()` + `.join()` / Arrays + `.push()` + `.join()`  
+- Separation of logic and output / Separação entre lógica e saída  
 
 ---
 
-## How to Run | Como Executar
+## How to run | Como executar
 
-Make sure **Node.js** is installed.  
-Certifique-se de ter o **Node.js** instalado.
+Make sure Node.js is installed.  
+Certifique-se de ter o Node.js instalado.
 
-In the project folder, run / No diretório do projeto, execute:
+Run in the project folder / Execute na pasta do projeto:
 
 ```bash
 node index.js
 
+Example output | Exemplo de saída
+
+=== HERO LEVEL CLASSIFIER ===
+O Herói de nome Emily está no nível de Platina.
+O Herói de nome Mathis está no nível de Bronze.
+O Herói de nome Mabel está no nível de Imortal.
+=== END ===
+
+
 ⸻
 
-The program will classify multiple heroes defined in the code and print the results in the terminal.
-O programa irá classificar vários heróis definidos no código e exibir o resultado no terminal.
+Notes | Notas
+	•	Heroes are currently defined directly in the code (beginner-friendly).
+    Os heróis estão definidos diretamente no código (didático e simples).
+	•	The loop exists to process multiple heroes, matching the challenge requirement.
+    O laço existe para processar vários heróis, como pede o desafio.
+
+    - Includes a small edge-case example (invalid XP) to demonstrate basic input validation.
+    - Inclui um pequeno exemplo de caso limite (XP inválido) para demonstrar validação básica.
 
 ⸻
 
-Challenge Source | Fonte do Desafio
+Challenge source | Fonte do desafio
 
-This project is based on the Hero Level Classifier challenge proposed by
-Digital Innovation One (DIO) as part of the Santander bootcamp.
-
-Projeto baseado no desafio Classificador de Nível de Herói, proposto pela
-Digital Innovation One (DIO) no contexto do bootcamp Santander.
-
-The original challenge description is in Portuguese; the code was intentionally written in English for portfolio consistency.
-A descrição original do desafio está em português; o código foi escrito em inglês para manter consistência com portfólio.
+Based on the “Hero Level Classifier” challenge by Digital Innovation One (DIO) in the Santander bootcamp.
+Baseado no desafio “Classificador de Nível de Herói” da Digital Innovation One (DIO) no bootcamp Santander.
 
 ⸻
